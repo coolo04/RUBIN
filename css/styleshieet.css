@@ -1,0 +1,310 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 60px;
+    background-color: #222;
+    width: 100%;
+}
+
+#clickmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #222;
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+}
+
+.laholm {
+    background: url("../img/mainpagebackground.jpg") no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+}
+
+<!--.lahom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+}
+-->
+.mainart{
+    display: flex;
+    flex-direction: column;
+    color: #ddd;
+    font-weight: 500;
+    font-size: 140%;
+    font-family: Roboto,sans-serif;
+    justify-self: center;
+}
+
+#litenbild {
+    width: 600px;
+    height: auto;
+}
+
+#kortbeskrivning {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 80px;
+}
+
+#antalmedlemmar {
+    width: 600px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 180%;
+}
+
+#forstasidanbotten {
+    display:flex;
+    justify-content: space-around;
+    color: #222;
+    font-size: 120%;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    padding: 5%;
+}
+
+.firstNavClass{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text1{
+    color: #ddd;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
+
+.imgClass {
+    height: 60px;
+}
+
+
+
+
+.closeBurger {
+    display: none;
+}
+
+
+@media screen and (min-width: 770px) {
+
+    .burger {
+        display: none;
+    }
+
+    #clickmenu {
+        display: none;
+    }
+
+
+
+
+    
+
+  }
+
+@media screen and (max-width: 770px) {
+
+    .firstNavClass {
+        display: none;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .mainart{
+        display: flex;
+        flex-direction: column;
+        color: #ddd;
+        font-weight: 500;
+        font-size: 80%;
+        font-family: Roboto,sans-serif;
+        width: 80%;
+    }
+    
+    #litenbild {
+        width: 100%;
+        height: auto;
+        justify-self: center;
+    }
+    
+    #kortbeskrivning {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 60px;
+    }
+    
+    #antalmedlemmar {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size:120%;
+    }
+
+    .laholm {
+        background: url("../img/mainpagebackground.jpg") no-repeat;
+        background-size: cover;
+        height: 70vh;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #forstasidanbotten {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #222;
+        font-size: 120%;
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        padding: 5%;
+    }
+
+}
+
+
+
+
+/* EVENTSIDA NY CSS*/
+
+
+
+
+
+#eventsida {
+    font-family: Roboto, sans-serif;
+    display: grid;
+    color: black;
+    grid-template-columns: 50%;
+    grid-template-areas: 
+                        "band band"    
+                        "komma tidig"
+                        "komevent tidigevent";
+    text-align: center;
+    height: 100vh;
+    grid-template-rows: 15vh 15vh auto;
+}
+
+#banderoll {
+    grid-area: band;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#kommandeEvent {
+    grid-area: komma;
+    text-align: center;
+}
+
+#tidigareEvent {
+    grid-area: tidig;
+}
+
+#kommandeEventen {
+    grid-area: komevent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tidigareEventen {
+    grid-area: tidigevent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event {
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+    outline-color: gray;
+    outline-style: solid;
+    width: 50%;
+    border-radius: 5px;
+    height: 15vh;
+    margin: 50px;
+}
+
+
+
+
+
+
+
+
+
+/* KONTAKTSIDA NY CSS*/
+
+
+
+
+
+
+#kontaktMain {
+    
+}
+
+#discordLogga {
+    height: 100%;
+}
+
+.discord {
+    display: flex;
+    justify-content: space-around;
+    height: 25vh;
+    outline-color: black;
+    outline-style: solid;
+    border-radius: 40px;
+    margin: 4%;
+
+}
+
+#instagramLogga {
+    height: 100%;
+}
+
+.instagram {
+    display: flex;
+    justify-content: space-around;
+    height: 25vh;
+    outline-color: black;
+    outline-style: solid;
+    border-radius: 40px;
+    margin: 4%;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleshieet.css">
+</head>
+<body>
+    <header class="Header">
+        
+        <img src="img/logga2.png" class="imgClass">
+
+        <nav class="firstNavClass">
+           
+            <p>
+                <a class="text1" style="text-decoration:none" href="Event.html">Event</a>
+            </p>
+            <p>
+                <a class="text1" style="text-decoration:none" href="Kontakt.html">Kontakta oss</a>
+            </p>
+        </nav>
+        
+        
+        <button onclick="myFunction()" style="background-color: transparent;">
+        <img src="img/hamburgermenu.png" style="height: 100%;">
+        </button>
+
+        <script>
+                function myFunction() {
+                  var x = document.getElementById("clickmenu");
+                  if (x.style.display === "none") {
+                    x.style.display = "block";
+                  } else {
+                    x.style.display = "none";
+                  }
+                }
+        </script>
+
+        
+
+        
+    </header>
+    <section id="clickmenu" style="display: none;">
+            <p>
+                <a class="text1" style="text-decoration:none" href="Event.html">Event</a>
+            </p>
+
+            <p>
+                <a class="text1" style="text-decoration:none" href="Kontakt.html">Kontakta oss</a>
+            </p>
+    </section>
+
+    <main class="laholm">
+        <article class="mainart">
+            <img src=img/Logga2.png id="litenbild">
+            <div id="kortbeskrivning">RUBIN, Rymdintresserade Ungdomars Bekantskap I NTI-Johanneberg</div>
+            <div id="antalmedlemmar">
+                <div>6</div> 
+                <div >medlemmar</div>
+            </div>
+        </article>
+    </main>
+    <section id="forstasidanbotten">
+        <article class="forstasidanartikel">
+            <h1>vilka är vi?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi expedita cupiditate quidem sunt aperiam voluptas animi eum unde, quisquam quod, ullam dolorem dolores! Quas a corporis maxime tenetur, provident, eveniet iste quidem consequatur beatae at repellendus deleniti labore, libero obcaecati assumenda. Vel, eos exercitationem molestiae officia blanditiis provident quidem!</p>
+        </article>
+        <article class="forstasidanartikel">
+            <h1>vad gör vi?</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi delectus vitae ex ad fuga quia sapiente rerum possimus voluptates vero consequuntur deserunt provident inventore modi deleniti illo, at aspernatur debitis nihil numquam soluta laboriosam facilis! Vitae unde nesciunt id officiis iure quis qui fugit voluptate dolorem? Commodi neque reiciendis quasi!</p>
+        </article>
+    </section>
+</body>
+</html>
