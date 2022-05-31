@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/styleshieet.css">
+    <script type="text/javascript" src="js/hamburgerScript.js"></script>
 </head>
 <body>
     <header class="Header">
         
-        <img src="img/logga2.png" class="imgClass">
+        <img src="img/logga2.png" class="imgClass" alt="bild på logga">
 
         <nav class="firstNavClass">
            
@@ -23,20 +24,9 @@
         </nav>
         
         
-        <button onclick="myFunction()" style="background-color: transparent;">
-        <img src="img/hamburgermenu.png" style="height: 100%;">
+        <button id="hamburgerMenu" onclick="myFunction()" style="background-color: transparent;">
+            <img src="img/hamburgermenu.png" style="height: 100%;" alt="meny för andra sidor">
         </button>
-
-        <script>
-                function myFunction() {
-                  var x = document.getElementById("clickmenu");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  }
-                }
-        </script>
 
         
 
@@ -52,9 +42,9 @@
             </p>
     </section>
 
-    <main class="laholm">
+    <main class="mainpageMain">
         <article class="mainart">
-            <img src=img/Logga2.png id="litenbild">
+            <img src=img/Logga2.png id="litenbild" alt="bild på logga">
             <div id="kortbeskrivning">RUBIN, Rymdintresserade Ungdomars Bekantskap I NTI-Johanneberg</div>
             <div id="antalmedlemmar">
                 <div>6</div> 

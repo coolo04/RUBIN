@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/styleshieet.css">
+    <script type="text/javascript" src="js/hamburgerScript.js"></script>
 </head>
 <body>
     <header class="Header">
         <a href="mainpage.html">
-            <img src="img/logga2.png" class="imgClass">
+            <img src="img/logga2.png" alt="bild på logga och länk till förstasidan" class="imgClass">
         </a>
 
         <nav class="firstNavClass">
@@ -20,7 +21,20 @@
                 <a class="text1" style="text-decoration:none" href="Kontakt.html">Kontakta oss</a>
             </p>
         </nav>
+
+        <button id="hamburgerMenu" onclick="myFunction()" style="background-color: transparent;">
+            <img src="img/hamburgermenu.png" style="height: 100%;" alt="meny för andra sidor">
+        </button>
+
     </header>
+
+    <section id="clickmenu" style="display: none;">
+        <p class="text1">Event</p>
+
+        <p>
+            <a class="text1" style="text-decoration:none" href="Kontakt.html">Kontakta oss</a>
+        </p>
+    </section>
 
     <main id="eventsida">
         <h1 id="banderoll">Våra event</h1> 
@@ -34,7 +48,7 @@
         </section>
 
         <section id="tidigareEventen">
-            <p class="event">adkpd</p>
+            <p class="event">Lorem ipsum</p>
         </section>
         
     </main>

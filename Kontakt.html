@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/styleshieet.css">
+    <script type="text/javascript" src="js/hamburgerScript.js"></script>
 </head>
 <body>
     <header class="Header">
         <a href="mainpage.html">
-            <img src="img/logga2.png" class="imgClass">
+            <img src="img/logga2.png" class="imgClass" alt="bild på logga och länk till förstasidan">
         </a>
 
         <nav class="firstNavClass">
@@ -21,12 +22,27 @@
             </p>
             <p class="text1">Kontakta oss</p>
         </nav>
+
+        <button id="hamburgerMenu" onclick="myFunction()" style="background-color: transparent;">
+            <img src="img/hamburgermenu.png" style="height: 100%;" alt="meny för andra sidor">
+        </button>
+
     </header>
+
+    <section id="clickmenu" style="display: none;">
+        <p>
+            <a class="text1" style="text-decoration:none" href="Event.html">Event</a>
+        </p>
+
+        <p>
+            <a class="text1" style="text-decoration:none" href="Kontakt.html">Kontakta oss</a>
+        </p>
+    </section>
 
     <main id="kontaktMain">
         <article class="discord">
             <a href="https://discord.gg/PGzpWmTKSb">
-                <img src="img/Logga1.png" id="discordLogga">
+                <img src="img/Logga1.png" id="discordLogga" alt="discord-invite till vår kanal: https://discord.gg/PGzpWmTKSb">
             </a>
             <section>
                <h1>Vår discordkanal</h1>
@@ -35,7 +51,7 @@
         </article>
         <article class="instagram">
             <a href="mainpage.html">
-                <img src="img/Logga1.png" id="instagramLogga">
+                <img src="img/Logga1.png" id="instagramLogga" alt="länk för vårt instagramkonto: mainpage.html">
             </a>
             <section>
                 <h1>Vårt instagramkonto</h1>
